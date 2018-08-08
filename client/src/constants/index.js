@@ -1,3 +1,3 @@
-export const SITE_TITLE = 'MyFeeds'
-export const LOCAL_STORAGE_USER = 'MYFEEDS_USER'
+export const SITE_TITLE = 'Treilla'
+export const LOCAL_STORAGE_USER = 'TREILLA_USER'
 export const LOCALE_STORAGE_FEED_SCROLL = 'MYFEEDS_FEED_SCROLL'

@@ -1,9 +1,9 @@
 {
-  "short_name": "MyFeeds",
-  "name": "MyFeeds - Microblogging app",
+  "short_name": "Treilla",
+  "name": "Treilla - crypto network for security professionals",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "treillaLogo.png",
       "sizes": "192x192",
       "type": "image/png"
     }

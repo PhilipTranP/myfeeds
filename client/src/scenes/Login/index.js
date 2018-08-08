@@ -26,6 +26,17 @@ const LoginButton = glamorous.button({
   },
 })
 
+const LoginGoogleButton = glamorous.button({
+  display: 'flex',
+  justifyContent: 'center',
+  backgroundColor: 'red',
+  alignItems: 'center',
+  '& svg': {
+    position: 'absolute',
+    right: '24',
+  },
+})
+
 const Error = glamorous.p({
   color: '#D32F2F',
   fontWeight: 'bold',
@@ -97,6 +108,7 @@ class LoginScene extends Component {
                 ]
               : 'Sign in'}
           </LoginButton>
+          <LoginGoogleButton>Sign in with google</LoginGoogleButton>
 
           <p style={{ textAlign: 'center' }}>
             <Link to="/signup">Don’t have an account yet? Sign up.</Link>

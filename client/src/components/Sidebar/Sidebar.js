@@ -24,7 +24,7 @@ const Content = glamorous.div({
 
 const Header = glamorous('header', { propsAreCssOverrides: true })({
   position: 'relative',
-  backgroundColor: '#212121',
+  backgroundColor: '#2b3990',
   height: 114,
 })
 
@@ -37,7 +37,7 @@ const ImageContainer = glamorous.div({
   height: 150,
   borderRadius: '50%',
   border: '2px solid white',
-  backgroundColor: '#212121',
+  backgroundColor: '#2b3990',
   transform: 'translateX(-50%)',
 })
 

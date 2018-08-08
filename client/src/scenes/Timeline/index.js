@@ -68,16 +68,17 @@ class TimelineScene extends Component {
             <PostForm {...this.activeUser} onSubmit={onSubmit} />
 
             <PostList>
-              {posts.map(post => (
-                <li key={post._id}>
-                  <Post
-                    {...post}
-                    onFavorite={onFavorite}
-                    onItemClick={onItemClick}
-                    ref={onPostRef}
-                  />
-                </li>
-              ))}
+              {posts &&
+                posts.map(post => (
+                  <li key={post._id}>
+                    <Post
+                      {...post}
+                      onFavorite={onFavorite}
+                      onItemClick={onItemClick}
+                      ref={onPostRef}
+                    />
+                  </li>
+                ))}
             </PostList>
           </div>
 

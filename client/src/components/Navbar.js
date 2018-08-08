@@ -13,7 +13,7 @@ const Header = glamorous.header({
   top: 0,
   zIndex: 1,
   height: 60,
-  backgroundColor: '#212121',
+  backgroundColor: '#2b3990',
   color: '#fff',
   boxShadow: '0 1px 3px rgba(50,50,50,.16)',
   '& a': {
@@ -43,6 +43,10 @@ const LeftContainer = glamorous.div({
 })
 
 const Title = glamorous.h1({
+  fontSize: '1.2em',
+  marginRight: '1rem',
+})
+const BrandTitle = glamorous.h1({
   fontSize: '1.2em',
   marginRight: '3rem',
 })
@@ -79,10 +83,15 @@ const Navbar = ({ isLoggedIn: username }) => (
       <LeftContainer>
         <Title>
           <Link to="/">
-            <MdLineWeight size="24" color="#fff" style={{ marginRight: 12 }} />
-            {SITE_TITLE.toLowerCase()}
+            {/* <MdLineWeight size="24" color="#fff" style={{ marginRight: 12 }} /> */}
+            <img src="treillaLogo.png" width ="40px" style={{marginTop: 6 }}/>
           </Link>
         </Title>
+        <BrandTitle>
+          <Link to="/">
+            {SITE_TITLE}
+          </Link>
+        </BrandTitle>
 
         {username && (
           <NavList>
@@ -102,7 +111,7 @@ const Navbar = ({ isLoggedIn: username }) => (
       {username && [
         <Searchbar key="searchbar">
           <MdSearch size="24" color="#eee" style={{ marginTop: 6 }} />
-          <SearchForm placeholder="Search MyFeeds" />
+          <SearchForm placeholder="Search Treilla" />
         </Searchbar>,
 
         <NavList key="more">
